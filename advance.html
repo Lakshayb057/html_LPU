@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu</title>
+  <style>
+    /* Hamburger menu style */
+    .hamburger {
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      background-color: #333;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    .hamburger div:nth-child(1) {
+      top: 0;
+    }
+
+    .hamburger div:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .hamburger div:nth-child(3) {
+      bottom: 0;
+    }
+
+    /* Optional: Adjust for hover or active states */
+    .hamburger:hover div {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hamburger">
+    <div class="A">Lakshay</div>
+    <div class="A">Rahul</div>
+    <div></div>
+  </div>
+
+</body>
+</html>
